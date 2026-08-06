@@ -1,0 +1,17 @@
+{
+  "id": "career_card",
+  "name": "Career Card",
+  "version": "1.0.0",
+  "api": 2,
+  "entry": "main.lua",
+  "profile": "content",
+  "category": "MECHANIC",
+  "game_version": ">=0.0.0-0 <2.0.0",
+  "github": "Dileppy/CareerCard",
+  "priority": 100,
+  "dependencies": [],
+  "optional_dependencies": [],
+  "conflicts": [],
+  "permissions": [],
+  "description": "Your mom believes in you, so she sends you money. Earn badges, fill the POKeDEX and meet enough wild POKeMON to get promoted through six sponsors."
+}

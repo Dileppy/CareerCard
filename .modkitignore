@@ -1,0 +1,12 @@
+docs/manual-verification.md
+tests/career_card_load_test.lua
+tests/career_card_ladder_test.lua
+tests/career_card_metrics_test.lua
+tests/career_card_rank_test.lua
+tests/career_card_payroll_test.lua
+tests/career_card_options_test.lua
+tests/career_card_integration_test.lua
+tests/career_card_ui_test.lua
+tests/career_card_notify_test.lua
+.gitignore
+.modkitignore
