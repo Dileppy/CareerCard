@@ -3,6 +3,22 @@
 All notable changes to this project are documented here.
 The format follows Keep a Changelog and the versions match `manifest.json`.
 
+## [1.0.1] - 2026-08-06
+
+### Fixed
+- The mod declared no `affects_link`, and an omitted field is read as TRUE
+  (`src/link/Handshake.lua:43` tests `affects_link ~= false`). Every player
+  who installed 1.0.0 was therefore treated as link-incompatible and could
+  not trade or link battle with anyone who did not also have it, despite the
+  mod changing no battle mechanics whatsoever. The manifest now declares
+  `"affects_link": false`.
+
+  The declaration is honest: the only link-relevant registry this mod
+  touches is `pokemon`, and it only ever reads it to count species
+  (`main.lua`). The load suite asserts both the declaration and the
+  underlying fact, so a future change that starts writing to a link registry
+  fails the tests rather than shipping a false claim.
+
 ## [1.0.0] - 2026-08-05
 
 ### Added
